@@ -1,0 +1,34 @@
+@use '../../styles/partials/global';
+
+.header {
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .navLogo {
+
+            .logo {
+                width: 150px;
+                height: 100px;
+                filter: drop-shadow(2px 4px 4px rgba(185, 176, 176, 0.7));
+            }
+        }
+
+        .navList {
+            display: flex;
+            list-style: none;
+            .list {
+                margin: 1rem;
+                color: aliceblue;
+            }
+        }
+    }
+}
