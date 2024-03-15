@@ -1,5 +1,5 @@
 import react from "react";
-import hero_img from '../../assets/images/img-hero-1.jpg'
+import hero_img from '../../assets/images/img-hero-10.jpg'
 import '../HeroSection/HeroSection.scss';
 
 

@@ -1,8 +1,13 @@
+@use '../../styles/partials/global';
+
+
 
 .hero {
 
     &__img {
         width: 100%;
         object-fit: cover;
+        filter: brightness(20%) grayscale(80%);
+        
     }
 }
