@@ -8,7 +8,10 @@ import HeroSection from '../../components/HeroSection/HeroSection'
 const Main = () => {
 
     return (
+        <>
+        <Header/>
         <HeroSection/>
+        </>
     )
 }
 
