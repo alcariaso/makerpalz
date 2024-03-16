@@ -3,11 +3,11 @@
 
 
 .hero {
-
+    overflow: hidden;
     &__img {
         width: 100%;
-        object-fit: cover;
+        height: 90vh;
         filter: brightness(20%) grayscale(20%) ;
-        
+        object-fit: cover;
     }
 }

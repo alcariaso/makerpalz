@@ -1,33 +1,46 @@
 @use '../../styles/partials/global';
+@import '../../styles/partials/mixins';
 
 .header {
     position: fixed;
-    background-color: transparent;
+    background-color:rgba(238, 243, 245, 0.7);
+    opacity: 20px;
     z-index: 1;
     width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;
+    padding-top: 1rem;
+    
 
     &__nav {
+       
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
 
         .navLogo {
 
             .logo {
-                width: 150px;
-                height: 100px;
-                filter: drop-shadow(2px 4px 4px rgba(185, 176, 176, 0.7));
+                width: 140px;
+                height: 70px;
+                filter: drop-shadow(6px 2px 2px  rgba(203, 199, 199, 0.7));
             }
         }
 
         .navList {
-            display: flex;
+            display: none;
             list-style: none;
+
+            @include tablet {
+                display: flex;
+            }
+
             .list {
-                margin: 1rem;
-                color: aliceblue;
+                margin: .5rem;
+                color: #051e49;
+                font-weight: 600;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
         }
     }
